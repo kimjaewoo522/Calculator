@@ -8,8 +8,10 @@ class Calculator {
             result = firstNumber - secondNumber
         } else if oper == "*" {
             result = firstNumber * secondNumber
-        } else {
+        } else if oper == "/"{
             result = firstNumber / secondNumber
+        } else {
+            result = firstNumber % secondNumber
         }
         
         return result
@@ -21,3 +23,4 @@ print(calculator.calculate(oper: "+", firstNumber: 10, secondNumber: 20))
 print(calculator.calculate(oper: "-", firstNumber: 20, secondNumber: 50))
 print(calculator.calculate(oper: "*", firstNumber: 20, secondNumber: 50))
 print(calculator.calculate(oper: "/", firstNumber: 20, secondNumber: 50))
+print(calculator.calculate(oper: "%", firstNumber: 70, secondNumber: 50))
